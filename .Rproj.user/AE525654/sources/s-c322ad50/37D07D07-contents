@@ -1,0 +1,46 @@
+baseurl = "/"
+languageCode = "en-US"
+title = "Priyanka Kar"
+# Enable comments by entering your Disqus shortname
+disqusShortname = ""
+# Enable Google Analytics by entering your tracking code
+googleAnalytics = ""
+theme = "hugo-sustain"
+
+[permalinks]
+  post = "/post/:year/:month/:day/:slug"
+
+[params]
+  avatar = "image0.jpg"
+  author = "Priyanka Kar"
+  occupation = "student at the University of Texas at Austin"
+  about = "I'm a Biology major with an emphasis on evolutionary and functional anatomy. When I'm not looking at old bones, I'm enjoying life as a cat mom, playing PC games, and developing my digital art portfolio."
+
+  # Custom assets can be linked with their paths relative to static/
+  custom_css = []
+  custom_js  = []
+
+[params.social]
+  Github        = "pkar528"
+  Email         = "pkar528@gmail.com"
+#  Instagram     = "username"
+#  Stackoverflow = "username"
+#  Medium        = "username"
+#  Telegram      = "username"
+
+## Main Menu
+[[menu.main]]
+  name = "blog"
+  weight = 100
+  identifier = "blog"
+  url = "/post/"
+[[menu.main]]
+  name = "projects"
+  identifier = "projects"
+  weight = 200
+  url = "/projects/"
+[[menu.main]]
+  name = "resume"
+  identifier = "resume"
+  weight = 300
+  url = "/resume/"

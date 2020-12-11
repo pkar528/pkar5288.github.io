@@ -1,0 +1,22 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1607721468057.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "1109224120",
+    "id" : "B97ACE2D",
+    "lastKnownWriteTime" : 1607721605,
+    "last_content_update" : 1607721605386,
+    "path" : "~/website/content/post/2020-12-11-reticulate-allows-r-and-python-to-be-best-friends.Rmd",
+    "project_path" : "content/post/2020-12-11-reticulate-allows-r-and-python-to-be-best-friends.Rmd",
+    "properties" : {
+        "cursorPosition" : "10,421",
+        "scrollLine" : "0"
+    },
+    "relative_order" : 10,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_markdown"
+}

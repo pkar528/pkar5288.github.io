@@ -1,0 +1,22 @@
+---
+title: Reticulate Allows R and Python to be Best Friends
+author: Priyanka Kar
+date: '2020-12-11'
+slug: reticulate-allows-r-and-python-to-be-best-friends
+categories: []
+tags: []
+description: ''
+---
+
+
+```{R}
+library(reticulate)
+
+library(ggplot2)
+
+msleep <- msleep
+```
+
+```{python}
+
+```
