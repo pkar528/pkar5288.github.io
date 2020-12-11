@@ -152,13 +152,13 @@ mean(new[new$Darting_Style==&quot;smooth&quot;,]$Difficulty)}
 
 #Mean Difference
 mean(new[new$Darting_Style==&quot;mixed&quot;,]$Difficulty) - mean(new[new$Darting_Style==&quot;smooth&quot;,]$Difficulty)</code></pre>
-<pre><code>## [1] -9.6</code></pre>
+<pre><code>## [1] -5.675</code></pre>
 <pre class="r"><code>#Plot
 {hist(rand_dist,main=&quot;&quot;,ylab=&quot;&quot;); abline(v = c(-13.375, 13.375),col=&quot;red&quot;)}</code></pre>
 <p><img src="/project/project2_files/figure-html/unnamed-chunk-6-1.png" width="768" style="display: block; margin: auto;" /></p>
 <pre class="r"><code>#p-value
 mean(rand_dist &gt; 13.375 | rand_dist &lt; -13.375)</code></pre>
-<pre><code>## [1] 0.1786</code></pre>
+<pre><code>## [1] 0.172</code></pre>
 <p><em>I wanted to find the mean differences of fish catching difficulty based on the darting style of the fish species, because presumably, some darting styles should make a fish harder to catch than others. I reasoned that fish with a mixed style of darting would be the most unpredictable, and therefore hardest to catch. The smooth darting style also sounded like it could be attached to lower difficulty fish. These are the two categories I compared. My null hypothesis was &quot;Difficulty of catching a species of fish is the same regardless of whether the fish has a darting style of mixed or smooth&quot;, and my alternative hypothesis was &quot;Difficulty of catching a species of fish is different depending on if the fish has a darting style of mixed or smooth&quot;. After performing the randomization test, I found that the p-value was 0.1702, which is not significant. Therefore, I failed to reject the null hypothesis and concluded that fish catching difficulty is the same regardless of a smooth or mixed darting style.</em></p>
 <ul>
 <li><strong>3. (35 pts)</strong> Build a linear regression model predicting one of your response variables from at least 2 other variables, including their interaction. Mean-center any numeric variables involved in the interaction.</li>
@@ -348,7 +348,7 @@ samp_distn &lt;- replicate(5000, {
 })
 samp_distn %&gt;% t %&gt;% as.data.frame %&gt;% summarize_all(sd)</code></pre>
 <pre><code>##   (Intercept)  Hours_c Difficulty_c Hours_c:Difficulty_c
-## 1     352.243 53.87158     32.24768             2.802695</code></pre>
+## 1    336.6762 52.07601     31.65893             2.628185</code></pre>
 <p><em>The bootstrapped standard errors for resampled observations differed slightly from the robust standard errors, and differed a large amount from the original standard errors. The bootstrapped standard errors would not have altered the fact that these interactions are not significant, because they do not differ much from the robust standard errors, and the p-values accounting for the robust standard errors were not close to significant.</em></p>
 <ul>
 <li><strong>5. (25 pts)</strong> Fit a logistic regression model predicting a binary variable (if you don't have one, make/get one) from at least two explanatory variables (interaction not necessary).</li>

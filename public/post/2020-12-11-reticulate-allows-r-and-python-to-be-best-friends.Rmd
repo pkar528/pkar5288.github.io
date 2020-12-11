@@ -1,0 +1,23 @@
+---
+title: Reticulate Allows R and Python to be Best Friends
+author: Priyanka Kar
+date: '2020-12-11'
+slug: reticulate-allows-r-and-python-to-be-best-friends
+categories: []
+tags: []
+description: ''
+---
+
+Different coding languages do not have to exist apart from each other. When we moved on from Rstudio to Jupyter Notebook in class, I thought that I was moving on completely from R to Python. With this, I thought I would have to change my entire frame of mind about how to do any computations using data. However, with Reticulate, I can jump between R and Python and essentially have the two languages talk to one another!
+
+```{R}
+library(reticulate)
+
+library(ggplot2)
+
+msleep <- msleep
+```
+
+```{python}
+
+```
